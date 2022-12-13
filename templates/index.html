@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="GET" action="get/">
+    <label>Кнопка для get запроса</label>
+    <input name="order_text" />
+    <button type="submit">Отправить</button>
+</form>
+<form method="POST" action="create/" >
+    {% csrf_token %}
+    <label>кнопка для post запроса</label>
+    <input name="order_text" />
+    <button type="submit">Отправить</button>
+</form>
+
+
+
+{#{% if people.count > 0 %}#}
+{#    <h2>Список пользователей</h2>#}
+{#    <table>#}
+{#        <thead><th>Id</th><th>Имя</th></thead>#}
+{#        {% for person in people %}#}
+{#        <tr>#}
+{#            <td>{{ person.id }}</td>#}
+{#            <td>{{ person.order_text }}</td>#}
+{#        </tr>#}
+{#        {% endfor %}#}
+{#    </table>#}
+{#{% endif %}#}
+</body>
+</html>
+</body>
+</html>

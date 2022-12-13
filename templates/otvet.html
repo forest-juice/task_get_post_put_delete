@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if people.count > 0 %}
+    <h2>Список пользователей</h2>
+    <table>
+        <thead><th>Id</th><th>Имя</th></thead>
+        {% for person in people %}
+        <tr>
+            <td>{{ person.id }}</td>
+            <td>{{ person.order_text }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+</body>
+</html>
